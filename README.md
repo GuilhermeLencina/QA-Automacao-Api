@@ -31,23 +31,10 @@ Checklist básico para mostrar a progressão do projeto.
 
 [✔️] Criar arquivo **.gitignore**
 
-[️] Criar e Configurar Classe **TestBase**
+[✔️] Criar e Configurar Classe **TestBase**
 
-[️] Criar e Configurar Classe de **Waits**
+[✔️] Criar Classes de **TestsCases**
 
-[️] Criar classes parar geração de **Reports**
-
-[️] Criar Classe para gerar dados com **JavaFakers**
-
-[️] Criar Classe e Mapear Elementos nas **PageObjects**
-
-[️] Criar Classe e Desenvolver Métodos nas **Tasks**
-
-[️] Criar Classe e Desenvolver Validações nas **Validations**
-
-[️] Criar Classes de **TestsCases**
-
-[️] Criar **Suites** de Testes
 
 
 
