@@ -1,15 +1,16 @@
 package ViaCep;
 
 import TestBase.TestBase;
-import io.restassured.response.Response;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.basePath;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class ConsultaCep extends TestBase{
+public class ConsultaCepValido extends TestBase{
 
+    @DisplayName("Consulta - CEP Válido")
     @Test
     public void consultaCep(){
                 given()
@@ -23,6 +24,7 @@ public class ConsultaCep extends TestBase{
                     .body("cep", is("92700-765")).log();
     }
 
+    @DisplayName("Consulta - CEP Inválido Inexistente")
     @Test
     public void consultaCepValidoInexistente(){
             given()
@@ -35,6 +37,7 @@ public class ConsultaCep extends TestBase{
                 .body("erro", is(true));
     }
 
+    @DisplayName("Consulta - CEP Inválido com Letras")
     @Test
     public void consultaCepFormatoInvalidoComLetras(){
             given()
@@ -46,6 +49,7 @@ public class ConsultaCep extends TestBase{
                 .statusCode(400);
     }
 
+    @DisplayName("Consulta - CEP Inválido com Mais de Oito Digitos")
     @Test
     public void consultaCepFormatoInvalidoComMaisDeOitoDigitos(){
             given()
@@ -57,6 +61,7 @@ public class ConsultaCep extends TestBase{
                 .statusCode(400);
     }
 
+    @DisplayName("Consulta - CEP Inválido")
     @Test
     public void consultaCepValidarCamposObrigatorios(){
             given()
