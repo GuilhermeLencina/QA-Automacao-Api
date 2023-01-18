@@ -1,4 +1,4 @@
-# 🧑‍💼 ViaCep - Projeto de automação Web 🧑‍💼
+# 📮 ViaCep - Projeto de automação Web 📮
 Olá, seja bem-vindo ao meu Hub! Esse script foi desenvolvido para explicar de forma simples e eficaz o objetivo deste projeto em questão, no qual irei demonstrar meu nível de lógica e conhecimento sobre **testes automatizados em uma API**. Boa leitura!
 
 ## O que são testes automatizados? 🤔
